@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { LearnEvent } from "./components/LearnEvent";
+import { LearnJSX } from "./components/LearnJSX";
+import { LearnLiftingStateUp } from "./components/LearnLiftingStateUp";
+import { LearnLiftStateUp } from "./components/LearnLiftStateUp";
+import LearnProps from "./components/LearnProps";
 
 function App() {
+  const roll = 23;
+  const getClick = (data) => {
+    alert(data);
+  };
+
+  const getmy = (data) => {
+    alert(data);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LearnJSX />
+      <LearnProps name="Props is a basic concept." roll={roll} />
+      <LearnEvent />
+      <LearnLiftingStateUp myClick={getClick} />
+
+      <LearnLiftStateUp myCli={getmy} />
     </div>
   );
 }
