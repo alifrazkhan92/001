@@ -1,5 +1,3 @@
-import React from "react";
-
 export const LearnEvent = () => {
   const onClickhandle = (e) => {
     e.preventDefault();

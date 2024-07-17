@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 export const LearnUseState = () => {
   const [num, setNum] = useState(1);
   const handleNum = () => {

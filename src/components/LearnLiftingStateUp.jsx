@@ -1,5 +1,3 @@
-import React from "react";
-
 export const LearnLiftingStateUp = (props) => {
   const handleClick = (e) => {
     e.preventDefault();
