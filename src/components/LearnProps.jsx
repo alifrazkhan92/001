@@ -1,4 +1,4 @@
-const LearnProps = ({ name, roll }) => {
+export const LearnProps = ({ name, roll }) => {
   return (
     <>
       <h1>{name}</h1>
@@ -6,5 +6,3 @@ const LearnProps = ({ name, roll }) => {
     </>
   );
 };
-
-export default LearnProps;

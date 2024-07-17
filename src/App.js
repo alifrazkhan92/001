@@ -1,10 +1,10 @@
 import "./App.css";
 import { LearnEvent } from "./components/LearnEvent";
 import { LearnJSX } from "./components/LearnJSX";
-import { LearnLiftingStateUp } from "./components/LearnLiftingStateUp";
 import { LearnProps } from "./components/LearnProps";
 import { LearnUseState } from "./components/LearnUseState";
 import { LearnLiftStateUp } from "./components/LearnLiftStateUp";
+import { LearnUseEffect } from "./components/LearnUseEffect";
 
 function App() {
   const roll = 23;
@@ -20,9 +20,9 @@ function App() {
       <LearnJSX />
       <LearnProps name="Props is a basic concept." roll={roll} />
       <LearnEvent />
-      <LearnLiftingStateUp myClick={getClick} />
-      <LearnUseState />
       <LearnLiftStateUp myCli={getmy} />
+      <LearnUseState />
+      <LearnUseEffect />
     </div>
   );
 }
