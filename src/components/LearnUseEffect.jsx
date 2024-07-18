@@ -22,6 +22,9 @@ export const LearnUseEffect = () => {
   //3-if you add the dependency in the array like
   //useEffect(() => {console.log("Use Effect Called")},[count]);
   //this will execute on the execution of the dependency.
+  //4-The cleanup function execute when a component is unmount.
+  //seEffect(() => {console.log("Use Effect Called");
+  //return()=>{console.log("component will unmount. ")}, [count]}
   useEffect(() => {
     console.log("Use Effect Called");
   });
