@@ -6,6 +6,7 @@ import { LearnUseState } from "./components/LearnUseState";
 import { LearnLiftStateUp } from "./components/LearnLiftStateUp";
 import { LearnUseEffect } from "./components/LearnUseEffect";
 import { LearnUseMemo } from "./components/LearnUseMemo";
+import { LearnCustomHook } from "./components/LearnCustomHook";
 
 function App() {
   const roll = 23;
@@ -24,11 +25,15 @@ function App() {
       <hr />
       <LearnLiftStateUp myCli={getmy} />
       <hr />
+
       <LearnUseState />
       <hr />
       <LearnUseEffect />
       <hr />
       <LearnUseMemo />
+      <hr />
+      <LearnCustomHook />
+      <hr />
     </div>
   );
 }
