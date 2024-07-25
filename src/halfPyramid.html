@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number Half Pyramid</title>
+  </head>
+  <body>
+    <h1>Number Half Pyramid</h1>
+    <div id="pyramid"></div>
+
+    <script>
+      function createNumberHalfPyramid(start, end) {
+        let currentNumber = start;
+        const pyramidContainer = document.getElementById("pyramid");
+        for (let i = 1; currentNumber <= end; i++) {
+          let row = "";
+          for (let j = 0; j < i && currentNumber <= end; j++) {
+            row += currentNumber + " ";
+            currentNumber++;
+          }
+          const rowElement = document.createElement("p");
+          rowElement.textContent = row;
+          pyramidContainer.appendChild(rowElement);
+        }
+      }
+
+      // Start and end numbers
+      const startNumber = 91;
+      const endNumber = 100;
+      createNumberHalfPyramid(startNumber, endNumber);
+    </script>
+  </body>
+</html>

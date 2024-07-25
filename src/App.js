@@ -8,6 +8,8 @@ import { LearnUseEffect } from "./components/LearnUseEffect";
 import { LearnUseMemo } from "./components/LearnUseMemo";
 import { LearnCustomHook } from "./components/LearnCustomHook";
 import { LearnConditionalRendering } from "./components/LearnConditionalRendering";
+import { LearnMapMethod } from "./components/LearnMapMethod";
+import CreateTodo from "./components/CreateTodo";
 
 function App() {
   const roll = 23;
@@ -18,6 +20,8 @@ function App() {
 
   return (
     <div className="App">
+      <CreateTodo />
+      <hr />
       <LearnJSX />
       <hr />
       <LearnProps name="Props is a basic concept." roll={roll} />
@@ -36,6 +40,8 @@ function App() {
       <LearnCustomHook />
       <hr />
       <LearnConditionalRendering />
+      <hr />
+      <LearnMapMethod />
     </div>
   );
 }
